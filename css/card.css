@@ -25,22 +25,3 @@
     width: 250px;
 }
 
-@media (min-width: 650px) and (max-width: 960px) {
-    .card {
-        width: 18%;
-        height: 750px;
-        overflow: hidden;
-        padding: 25px;
-  
-    }
-
-    .card__img {
-        width: 100%;
-        max-width: 250px; 
-    }
-    .card__description,
-    .card__title{
-    font-size: 0.8rem;
-    }
-
-}
