@@ -34,8 +34,8 @@
   }
 
   .card {
-    width: 18%;
-    height: 750px;
+    width: 16vw;
+    height: 100vh;
     justify-content: space-around;
     overflow: hidden;
     padding: 25px;
@@ -49,24 +49,30 @@
 
   .card__description,
   .card__title {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
 @media (width > 960px) {
   .headerContent {
-    width: 24vw;
+    width: 20vw;
     position: fixed;
   }
-  
+
+  .headerContent__title {
+    font-size: 1.8rem;
+  }
+
+
   .productsContent {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 34vw;
+    margin-left: 28vw;
+
   }
 
   .menuFoot {
-    width: 24vw;
+    width: 20vw;
     height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
@@ -80,29 +86,55 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 
   }
-  
 
-  .btn__icon{
-    height: 100px;
-    width: 100px;
+
+  .btn__icon {
+    height: 90px;
+    width: 90px;
   }
-  .btn__text{
-    font-size: 1.5rem;
+
+  .btn__text {
+    font-size: 1.4rem;
   }
-  .card{
+
+  .card {
+    margin-top: 4vh;
     width: 36%;
-    height: 881px;
-    justify-content: space-around;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+   justify-items: center;
     overflow: hidden;
     padding: 25px;
   }
+
   .card__img {
+    grid-column: 1;
+    grid-row: 2;
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
+    
   }
 
   .card__description,
-  .card__title {
-    font-size: 1.3rem;
+  .card__title,
+  .card__price {
+    font-size: 1.5rem;
   }
+  .card__title{
+   grid-row: 1;
+    grid-column:2;
+  }
+  
+  .card__price{
+    grid-row: 2;
+     grid-column:2;
+   }
+
+   .card__description{
+    grid-row: 3;
+     grid-column:2;
+   }
 }
